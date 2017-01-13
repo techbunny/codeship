@@ -44,6 +44,8 @@ echo '{
 }
 ' > DockerDeploy.parameters.json
 echo "Created Docker Deploy Parameters File"
+echo "Your adminusername is" $adminusername
+echo "Your adminpassword is" $adminpassword
 
 # Initiate Resource Group Deployment
 azure group deployment create -g $Resource -f $Template -e $paramFile $deploymentName
