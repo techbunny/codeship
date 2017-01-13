@@ -17,6 +17,10 @@ Prior to getting started, please ensure you have the following installed in your
 - [Docker](https://www.docker.com/products/overview)
 - [Azure CLI](https://docs.microsoft.com/azure/xplat-cli-install)
 
+It is strongly recommended to fork this repo, or download the files separately. 
+
+#### You will need to connect your own repo to Codeship pro in order to use this Azure Deployment Demo.
+
 ### Using other tools
 
 While the container we provide for interacting with Azure gives you an easy and straight forward way to run your deployments it is not the only way you can interact with Azure services. You can install your own dependencies, write your own deployment scripts, talk to the Azure API directly or bring 3rd party tools to do it for you. By installing those tools into a Docker container and running them you have a lot of flexibility in how to deploy to Azure.
