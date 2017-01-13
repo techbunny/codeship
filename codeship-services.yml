@@ -1,9 +1,6 @@
 azuredeployment:
   image: microsoft/azure-cli
-  cached: true
-  encrypted_env_file: 
-  - azure.env.encrypted
-  - vm.env.encrypted
+  encrypted_env_file: azure.env.encrypted
   environment:
   - Resource=Codeship
   - Location=eastus
