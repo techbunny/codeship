@@ -2,7 +2,7 @@ azuredeployment:
   image: microsoft/azure-cli
   encrypted_env_file: azure.env.encrypted
   environment:
-  - Resource=Codeship2
+  - Resource=Codeship
   - Location=eastus
   volumes:
   - ./:/deploy
@@ -11,4 +11,4 @@ azureappdeploy:
   build:
     image: alpine:latest
     dockerfile_path: deployment/Dockerfilessh
-  encrypted_env_file: vm.env.encrypted
+  encrypted_env_file: azure.env.encrypted
